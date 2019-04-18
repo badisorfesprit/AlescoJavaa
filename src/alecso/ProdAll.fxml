@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alecso.ProdAllController">
+   <children>
+      <AnchorPane layoutY="79.0" opacity="0.96" prefHeight="313.0" prefWidth="700.0" style="-fx-background-color: fffff;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="76.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="275.0" fitWidth="700.0" layoutX="4.0" layoutY="143.0" opacity="0.46" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMage/stickers-crayons-de-couleur-faisant-une-vague.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="table" layoutX="36.0" layoutY="10.0" prefHeight="237.0" prefWidth="301.0">
+              <columns>
+                <TableColumn fx:id="idN" prefWidth="139.0" text="nom" />
+                <TableColumn fx:id="idD" prefWidth="161.0" text="Description" />
+              </columns>
+            </TableView>
+            <GridPane layoutX="405.0" layoutY="86.0" prefHeight="150.0" prefWidth="253.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="116.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="137.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text fx:id="n" strokeType="OUTSIDE" strokeWidth="0.0" text="nom:" />
+                  <Text fx:id="d" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" GridPane.rowIndex="1" />
+                  <Text fx:id="p" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix:" GridPane.rowIndex="2" />
+                  <Text fx:id="q" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantité:" GridPane.rowIndex="3" />
+                  <Text fx:id="libN" strokeType="OUTSIDE" strokeWidth="0.0" text="lib" GridPane.columnIndex="1" />
+                  <Text fx:id="libD" strokeType="OUTSIDE" strokeWidth="0.0" text="lib" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Text fx:id="libP" strokeType="OUTSIDE" strokeWidth="0.0" text="lib" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Text fx:id="libQ" strokeType="OUTSIDE" strokeWidth="0.0" text="lib" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Text fx:id="ca" strokeType="OUTSIDE" strokeWidth="0.0" text="Categorie:" wrappingWidth="70.13671875" GridPane.rowIndex="4" />
+                  <Text fx:id="libCat" strokeType="OUTSIDE" strokeWidth="0.0" text="lib" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+            <ImageView fx:id="libImage" fitHeight="86.0" fitWidth="93.0" layoutX="417.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="305.0" layoutY="268.0" mnemonicParsing="false" onAction="#Reserver" text="Reserver" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="-3.0" prefHeight="55.0" prefWidth="700.0" style="-fx-background-color: #34C663;">
+         <children>
+            <Button layoutX="224.0" layoutY="10.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="270.0" style="-fx-background-color: efc057;" text="Catalogue des Produits" textFill="#f8f7f7">
+               <font>
+                  <Font name="Arial Narrow Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="57.0" fitWidth="100.0" layoutX="59.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMage/Untitled-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="44.0" layoutX="642.0" layoutY="6.0" onMouseClicked="#Panier" onMousePressed="#Panier" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMage/white-shopping-cart-md.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="59.0" layoutX="9.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMage/50813492_398397634301795_3847206518621470720_n.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="232.0" layoutY="11.0" onMouseClicked="#home" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMage/50199804-icono-inicio-blanco-blanco-en-el-negro.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="542.0" layoutY="67.0" mnemonicParsing="false" onAction="#MesProd" text="Mes Produits" />
+   </children>
+</AnchorPane>

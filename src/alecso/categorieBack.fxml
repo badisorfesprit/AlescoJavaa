@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alecso.CategorieBackController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="469.0" prefWidth="604.0" stylesheets="@../../../store.css">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="746.0">
+               <children>
+                  <VBox prefHeight="462.0" prefWidth="700.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="-62.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <HBox maxHeight="-Infinity" prefHeight="80.0" style="-fx-background-color: #353942;">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="80.0" prefWidth="168.0">
+                                 <children>
+                                    <ImageView fitHeight="50.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../IMage/56196570_844699922537796_8612127121810128896_n.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 1em;" text="ALECSO EDUCATION" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: 54;">
+                                 <children>
+                                    <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #3e3e3e;" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="414.0" prefWidth="746.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox maxWidth="-Infinity" prefWidth="150.0" style="-fx-background-color: #353942;">
+                                 <children>
+                                    <VBox maxWidth="-Infinity" prefHeight="403.0" prefWidth="150.0" style="-fx-background-color: #353942;">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #353942; -fx-border-color: white;">
+                                             <children>
+                                                <ImageView fitHeight="50.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../IMage/48412061_235489847348985_3949505046110011392_n.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 1em;" text="ADMIN" />
+                                             </children>
+                                          </HBox>
+                                          <Button layoutX="10.0" layoutY="144.0" mnemonicParsing="false" onAction="#GoToAdminUser" opacity="0.56" prefHeight="42.0" prefWidth="152.0" text="Gestion User" textFill="#16107a" />
+                                          <Button mnemonicParsing="false" onAction="#Annonces" opacity="0.56" prefHeight="42.0" prefWidth="152.0" text="Annonce" textFill="#16107a" />
+                                          <Button layoutX="10.0" layoutY="102.0" mnemonicParsing="false" onAction="#CatC" opacity="0.56" prefHeight="42.0" prefWidth="152.0" text="Categorie Annonce" textFill="#16107a" />
+                                          <Button layoutX="10.0" layoutY="228.0" mnemonicParsing="false" onAction="#GoToProduit" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text="Gestion Produit" textFill="#16107a" />
+                                          <Button mnemonicParsing="false" onAction="#retour" opacity="0.56" prefHeight="42.0" prefWidth="156.0" text="Categorie Produit" textFill="#16107a" />
+                                          <Button mnemonicParsing="false" onAction="#categoriebtn" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text="Categorie Evenement" textFill="#16107a" />
+                                          <Button layoutX="10.0" layoutY="270.0" mnemonicParsing="false" onAction="#bntAnnotation" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text="Annotation" textFill="#16107a" />
+                                          <Button layoutX="10.0" layoutY="295.0" mnemonicParsing="false" onAction="#GoToAffiche" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text="Document" textFill="#16107a" />
+                                          <Button layoutX="10.0" layoutY="299.0" mnemonicParsing="false" onAction="#statbtn" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text="Statistiques Evenement" textFill="#16107a" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="categorie_tab" layoutX="312.0" layoutY="97.0" onMouseClicked="#click_affiche" prefHeight="255.0" prefWidth="433.0" stylesheets="@../CSS/listView.css">
+               <columns>
+                  <TableColumn fx:id="id_COL" prefWidth="89.0" text="id" />
+                  <TableColumn fx:id="libelle_COL" prefWidth="199.0" text="libelle" />
+                  <TableColumn fx:id="description_COL" minWidth="0.0" prefWidth="178.0" text="description" />
+               </columns>
+            </TableView>
+            <TextField fx:id="id" layoutX="154.0" layoutY="154.0" prefHeight="42.0" prefWidth="149.0" promptText="id" />
+            <TextField fx:id="rechercheCol" layoutX="396.0" layoutY="63.0" prefHeight="25.0" prefWidth="142.0" />
+            <TextField fx:id="libelle" layoutX="153.0" layoutY="223.0" prefHeight="42.0" prefWidth="149.0" promptText="Libelle" />
+            <TextField fx:id="description" layoutX="153.0" layoutY="288.0" prefHeight="50.0" prefWidth="149.0" promptText="Description" />
+            <Button fx:id="ajout" layoutX="373.0" layoutY="395.0" mnemonicParsing="false" onAction="#ajouter_evenement" prefHeight="25.0" prefWidth="101.0" stylesheets="@../CSS/BouttonsRes.css" text="Ajouter" />
+            <Button fx:id="modifier" layoutX="487.0" layoutY="396.0" mnemonicParsing="false" onAction="#modifier" prefHeight="25.0" prefWidth="101.0" stylesheets="@../CSS/BouttonsRes.css" text="modifier" />
+            <Button fx:id="supprimer" layoutX="593.0" layoutY="396.0" mnemonicParsing="false" onAction="#supprimer_evenement" prefHeight="25.0" prefWidth="111.0" stylesheets="@../CSS/BouttonsRes.css" text="supprimer" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

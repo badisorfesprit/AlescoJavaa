@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alecso.AddannonceController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <HBox maxHeight="-Infinity" prefHeight="80.0" prefWidth="700.0" style="-fx-background-color: #353942;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="80.0" prefWidth="168.0">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../IMage/56196570_844699922537796_8612127121810128896_n.png" />
+                                 </image>
+                              </ImageView>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 1em;" text="ALECSO EDUCATION" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: 54;">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #3e3e3e;" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="328.0" prefWidth="663.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox maxWidth="-Infinity" prefHeight="404.0" prefWidth="146.0" style="-fx-background-color: #353942;">
+                           <children>
+                              <VBox maxWidth="-Infinity" prefHeight="325.0" prefWidth="151.0" style="-fx-background-color: #353942;">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #353942; -fx-border-color: white;">
+                                       <children>
+                                          <ImageView fitHeight="50.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../IMage/48412061_235489847348985_3949505046110011392_n.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 1em;" text="ADMIN" />
+                                       </children>
+                                    </HBox>
+                                    <Button layoutX="10.0" layoutY="144.0" mnemonicParsing="false" onAction="#GoToAdminUser" opacity="0.56" prefHeight="42.0" prefWidth="152.0" text="Gestion User" textFill="#16107a" />
+                                    <Button mnemonicParsing="false" onAction="#Annonces" opacity="0.56" prefHeight="42.0" prefWidth="152.0" text="Annonce" textFill="#16107a" />
+                                    <Button layoutX="10.0" layoutY="102.0" mnemonicParsing="false" onAction="#CatC" opacity="0.56" prefHeight="42.0" prefWidth="152.0" text="Categorie Annonce" textFill="#16107a" />
+                                    <Button layoutX="10.0" layoutY="228.0" mnemonicParsing="false" onAction="#GoToProduit" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text="Gestion Produit" textFill="#16107a" />
+                                    <Button mnemonicParsing="false" onAction="#retour" opacity="0.56" prefHeight="42.0" prefWidth="156.0" text="Categorie Produit" textFill="#16107a" />
+                                    <Button mnemonicParsing="false" onAction="#categoriebtn" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text=" Evenement" textFill="#16107a" />
+                                    <Button layoutX="10.0" layoutY="270.0" mnemonicParsing="false" onAction="#bntAnnotation" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text="Annotation" textFill="#16107a" />
+                                    <Button layoutX="10.0" layoutY="295.0" mnemonicParsing="false" onAction="#GoToAffiche" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text="Document" textFill="#16107a" />
+                                    <Button layoutX="10.0" layoutY="299.0" mnemonicParsing="false" onAction="#statbtn" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text="Statistiques Evenement" textFill="#16107a" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="327.0" prefWidth="539.0">
+                           <children>
+                              <AnchorPane layoutX="1.0" layoutY="293.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="548.0" style="-fx-background-color: #F7F7F5;" />
+                              <Button fx:id="addannonce" layoutX="257.0" layoutY="296.0" mnemonicParsing="false" onAction="#addannonce" style="-fx-background-color: #007AFF;" text="Ajouter" textFill="WHITE" />
+                              <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="554.0" style="-fx-background-color: #007AFF;">
+                                 <children>
+                                    <Text fill="WHITE" layoutX="70.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajout d'une annonce" />
+                                 </children>
+                              </AnchorPane>
+                              <Text layoutX="15.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre:" wrappingWidth="110.12109375" />
+                              <Text layoutX="8.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" />
+                              <Text layoutX="16.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Poster:" />
+                              <Text layoutX="14.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse:" />
+                              <Text layoutX="303.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ville:" />
+                              <Text layoutX="292.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delai:" />
+                              <Text layoutX="8.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de places:" wrappingWidth="110.99999999999994" />
+                              <Text layoutX="293.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nature:" />
+                              <Text layoutX="294.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone:" wrappingWidth="146.39999999999986" />
+                              <TextField fx:id="nom" layoutX="118.0" layoutY="45.0" prefHeight="26.0" prefWidth="149.0" promptText="Nom.." />
+                              <TextArea fx:id="desc" layoutX="115.0" layoutY="85.0" prefHeight="71.0" prefWidth="151.0" promptText="Description de votre club,les activitee,Horaires,Tarif..." />
+                              <TextField fx:id="adresse" layoutX="123.0" layoutY="217.0" prefHeight="26.0" prefWidth="138.0" />
+                              <DatePicker fx:id="delai" layoutX="371.0" layoutY="48.0" prefHeight="26.0" prefWidth="151.0" />
+                              <TextField fx:id="nbplaces" layoutX="122.0" layoutY="255.0" prefHeight="26.0" prefWidth="138.0" promptText="Nombre limite des places" />
+                              <TextField fx:id="tel" layoutX="378.0" layoutY="127.0" prefHeight="26.0" prefWidth="138.0" promptText="telephone" />
+                              <Button fx:id="btnimg" layoutX="213.0" layoutY="178.0" mnemonicParsing="false" onAction="#choisirimg" style="-fx-background-color: #008B8B; -fx-background-radius: 50px;" text="Choisir" textFill="WHITE" />
+                              <ComboBox fx:id="cbxcat" layoutX="373.0" layoutY="86.0" prefWidth="150.0" />
+                              <ComboBox fx:id="cbxvilles" layoutX="381.0" layoutY="172.0" prefWidth="150.0" />
+                              <ImageView fx:id="UploadImage" fitHeight="34.0" fitWidth="63.0" layoutX="128.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true" />
+                              <Text layoutX="306.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Options d'ajout:" wrappingWidth="44.314453125" />
+                              <ComboBox fx:id="prolongation" layoutX="382.0" layoutY="221.0" prefHeight="26.0" prefWidth="53.0" />
+                              <CheckBox fx:id="supression" layoutX="467.0" layoutY="225.0" mnemonicParsing="false" text="Annulation" />
+                              <Text layoutX="374.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="prolongation" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

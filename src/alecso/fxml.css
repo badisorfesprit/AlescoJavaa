@@ -1,0 +1,26 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.bodybg{
+ -fx-background-image: url('stickers-crayons-de-couleur-faisant-une-vague.png');
+ -fx-background-size: 100% 100%;
+}
+.button{
+     -fx-background-color:  #98ff98 ;
+     -fx-text-fill: black;
+     
+}
+.textfeild1{
+    
+    -fx-background-color:  #98ff98 ;
+     -fx-text-fill: black;
+}
+.textfeild2{
+    
+    -fx-background-color:  #98ff98 ;
+     -fx-text-fill: black;
+}

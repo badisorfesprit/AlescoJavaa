@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alecso.ModifannonceController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <HBox maxHeight="-Infinity" prefHeight="80.0" style="-fx-background-color: #353942;">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="80.0" prefWidth="168.0">
+                                 <children>
+                                    <ImageView fitHeight="50.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../IMage/56196570_844699922537796_8612127121810128896_n.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 1em;" text="ALECSO EDUCATION" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: 54;" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox maxWidth="-Infinity" prefHeight="404.0" prefWidth="146.0" style="-fx-background-color: #353942;">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #353942; -fx-border-color: white;">
+                                       <children>
+                                          <ImageView fitHeight="50.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../IMage/48412061_235489847348985_3949505046110011392_n.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 1em;" text="ADMIN" />
+                                       </children>
+                                    </HBox>
+                                    <Button mnemonicParsing="false" onAction="#GoToAdminUser" opacity="0.56" prefHeight="42.0" prefWidth="152.0" text="Gestion User" textFill="#16107a" />
+                                    <Button mnemonicParsing="false" onAction="#Annonces" opacity="0.56" prefHeight="42.0" prefWidth="152.0" text="Annonce" textFill="#16107a" />
+                                    <Button mnemonicParsing="false" onAction="#CatC" opacity="0.56" prefHeight="42.0" prefWidth="152.0" text="Categorie Annonce" textFill="#16107a" />
+                                    <Button mnemonicParsing="false" onAction="#GoToProduit" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text="Gestion Produit" textFill="#16107a" />
+                                    <Button mnemonicParsing="false" onAction="#retour" opacity="0.56" prefHeight="42.0" prefWidth="156.0" text="Categorie Produit" textFill="#16107a" />
+                                    <Button mnemonicParsing="false" onAction="#categoriebtn" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text=" Evenement" textFill="#16107a" />
+                                    <Button mnemonicParsing="false" onAction="#bntAnnotation" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text="Annotation" textFill="#16107a" />
+                                    <Button mnemonicParsing="false" onAction="#GoToAffiche" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text="Document" textFill="#16107a" />
+                                    <Button mnemonicParsing="false" onAction="#statbtn" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text="Statistiques Evenement" textFill="#16107a" />
+                                 </children>
+                              </VBox>
+                              <AnchorPane prefHeight="320.0" prefWidth="551.0">
+                                 <children>
+                                    <Text layoutX="407.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="prolongation" />
+                                    <Text layoutX="316.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Options :" wrappingWidth="116.64843749999989" />
+                                    <CheckBox fx:id="supression" layoutX="484.0" layoutY="260.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="83.0" text="annulation" />
+                                    <ImageView fx:id="UploadImage" fitHeight="32.0" fitWidth="53.0" layoutX="125.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" />
+                                    <AnchorPane layoutY="327.0" prefHeight="42.0" prefWidth="602.0" style="-fx-background-color: #F7F7F5;" />
+                                    <Button fx:id="modifannonce" layoutX="284.0" layoutY="335.0" mnemonicParsing="false" onAction="#modifannonce" style="-fx-background-color: #007AFF;" text="modifier" textFill="WHITE" />
+                                    <Text layoutX="9.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" />
+                                    <Text layoutX="10.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Poster:" />
+                                    <Text layoutX="11.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse:" />
+                                    <Text layoutX="318.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ville:" />
+                                    <Text layoutX="318.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delai:" />
+                                    <Text layoutX="8.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de places:" wrappingWidth="110.99999999999994" />
+                                    <Text layoutX="320.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nature:" />
+                                    <Text layoutX="312.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone" wrappingWidth="163.19999999999993" />
+                                    <TextField fx:id="nom" layoutX="120.0" layoutY="66.0" promptText="Nom.." />
+                                    <TextArea fx:id="desc" layoutX="121.0" layoutY="112.0" prefHeight="71.0" prefWidth="151.0" promptText="Description de votre club,les activitee,Horaires,Tarif..." />
+                                    <TextField fx:id="adresse" layoutX="125.0" layoutY="241.0" />
+                                    <DatePicker fx:id="delai" layoutX="406.0" layoutY="71.0" prefHeight="26.0" prefWidth="151.0" />
+                                    <TextField fx:id="nbplaces" layoutX="124.0" layoutY="284.0" promptText="Nombre limite des places" />
+                                    <TextField fx:id="tel" layoutX="409.0" layoutY="172.0" prefHeight="26.0" prefWidth="130.0" promptText="telephone" />
+                                    <Button fx:id="btnimg" layoutX="200.0" layoutY="196.0" mnemonicParsing="false" onAction="#choisirimg" style="-fx-background-color: #008B8B; -fx-background-radius: 50px;" text="Choisir" textFill="WHITE" />
+                                    <ComboBox fx:id="cbxcat" layoutX="407.0" layoutY="126.0" prefWidth="150.0" />
+                                    <AnchorPane layoutY="-1.0" prefHeight="50.0" prefWidth="602.0" style="-fx-background-color: #007AFF;">
+                                       <children>
+                                          <Text fill="WHITE" layoutX="71.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier une annonce" />
+                                       </children>
+                                    </AnchorPane>
+                                    <ComboBox fx:id="cbxvilles" layoutX="407.0" layoutY="218.0" prefWidth="150.0" />
+                                    <Text layoutX="14.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre:" wrappingWidth="52.80000000000018" />
+                                    <ComboBox fx:id="prolongation" layoutX="415.0" layoutY="293.0" prefHeight="26.0" prefWidth="39.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

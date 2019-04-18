@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" stylesheets="@JMetroDarkTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alecso.AfficherProfController">
+   <children>
+      <AnchorPane layoutX="1.0" layoutY="76.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.96" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: fffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="436.0" fitWidth="700.0" layoutX="-1.0" layoutY="124.0" opacity="0.46" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMage/stickers-crayons-de-couleur-faisant-une-vague.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D y="10.0" z="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <Button fx:id="remove" layoutX="555.0" layoutY="251.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="130.0" style="-fx-background-color: #34C663;" text="Remove" textFill="WHITE" />
+            <Button fx:id="btn_edit" layoutX="555.0" layoutY="286.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="130.0" style="-fx-background-color: #34C663;" text="Edit" textFill="WHITE" />
+            <TextField fx:id="statsocialetxt" layoutX="104.0" layoutY="320.0" />
+            <TextField fx:id="emailtxt" layoutX="343.0" layoutY="353.0" />
+            <TextField fx:id="etablissementtxt" layoutX="343.0" layoutY="320.0" />
+            <TextField fx:id="versregiontxt" layoutX="343.0" layoutY="289.0" />
+            <TextField fx:id="deregiontxt" layoutX="104.0" layoutY="353.0" />
+            <Label fx:id="statsocialelbl" layoutX="36.0" layoutY="324.0" text="statsociale" />
+            <Label fx:id="deregionlbl" layoutX="40.0" layoutY="357.0" text="deregion" />
+            <Label fx:id="versregionlbl" layoutX="271.0" layoutY="293.0" text="versregion" />
+            <Label fx:id="etablissementlbl" layoutX="262.0" layoutY="324.0" text="etablissement" />
+            <Label fx:id="emaillbl" layoutX="299.0" layoutY="349.0" text="email" />
+            <TextField fx:id="prenomtxt" layoutX="104.0" layoutY="289.0" />
+            <TextField fx:id="nomtxt" layoutX="104.0" layoutY="257.0" />
+            <Label fx:id="prenomlbl" layoutX="36.0" layoutY="293.0" prefWidth="55.0" text="prenom" />
+            <Label fx:id="nomlbl" layoutX="36.0" layoutY="261.0" prefWidth="55.0" text="nom" />
+            <ImageView fx:id="backk" accessibleRole="BUTTON" fitHeight="31.0" fitWidth="29.0" layoutX="656.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMage/Logout-512.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="annonces" layoutX="555.0" layoutY="320.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="130.0" style="-fx-background-color: #34C663;" text="annonces" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="TableP" prefHeight="243.0" prefWidth="700.0">
+        <columns>
+            <TableColumn fx:id="nomP" prefWidth="116.0" text="nom" />
+            <TableColumn fx:id="prenomP" prefWidth="116.0" text="prenom" />
+          <TableColumn fx:id="statsocialeP" prefWidth="116.0" text="statsociale" />
+          <TableColumn fx:id="deregionP" prefWidth="111.0" text="deregion" />
+            <TableColumn fx:id="versregionP" prefWidth="111.0" text="versregion" />
+            <TableColumn fx:id="etablissementP" prefWidth="111.0" text="etablissement" />
+            <TableColumn fx:id="emailP" prefWidth="111.0" text="email" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
