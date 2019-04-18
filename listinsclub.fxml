@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alecso.ListinsclubController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <HBox maxHeight="-Infinity" prefHeight="80.0" style="-fx-background-color: #353942;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="80.0" prefWidth="168.0">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../IMage/alecso.png" />
+                                 </image>
+                              </ImageView>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 1em;" text="ALECSO EDUCATION" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: 54;">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #3e3e3e;">
+                                 <children>
+                                    <TextField promptText="SEARCH HERE" />
+                                    <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../IMage/zoom-icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox maxWidth="-Infinity" prefWidth="150.0" style="-fx-background-color: #353942;">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #353942; -fx-border-color: white;">
+                                 <children>
+                                    <ImageView fitHeight="50.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../IMage/uuu.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 1em;" text="ADMIN" />
+                                 </children>
+                              </HBox>
+                              <Button fx:id="catAnnonce" mnemonicParsing="false" onAction="#CatC" opacity="0.56" prefHeight="42.0" prefWidth="156.0" text="Categorie Annonce" textFill="#16107a" />
+                              <Button fx:id="Annonces" mnemonicParsing="false" onAction="#Annonces" opacity="0.56" prefHeight="42.0" prefWidth="155.0" text="Annonces" textFill="#16107a" />
+                              <Button mnemonicParsing="false" opacity="0.56" prefHeight="42.0" prefWidth="152.0" text="BOUTON3" textFill="#16107a" />
+                           </children>
+                        </VBox>
+                        <AnchorPane prefHeight="320.0" prefWidth="552.0">
+                           <children>
+                              <TabPane fx:id="page" layoutX="1.0" prefHeight="314.0" prefWidth="551.0" tabClosingPolicy="UNAVAILABLE">
+                                <tabs>
+                                  <Tab fx:id="page1" onSelectionChanged="#pageaff" text="affichage">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <TableView fx:id="table" layoutX="136.0" layoutY="33.0" prefHeight="104.0" prefWidth="170.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="nom" prefWidth="90.0" text="nom" />
+                                                      <TableColumn fx:id="date" prefWidth="90.0" text="date naissance" />
+                                                      <TableColumn fx:id="etab" prefWidth="90.0" text="etablissement" />
+                                                      <TableColumn fx:id="adresse" prefWidth="93.60003051757815" text="adresse" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                  <Tab fx:id="page2" onSelectionChanged="#pagestat" text="statistiques">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                  </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

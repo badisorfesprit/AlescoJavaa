@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alecso.RegistrationController">
+   <children>
+      <AnchorPane id="cardd" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="350.0" styleClass="card-white">
+         <children>
+            <ImageView fitHeight="209.0" fitWidth="213.0" layoutX="137.0" layoutY="200.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMage/child.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="-4.0" layoutY="343.0" prefHeight="57.0" prefWidth="359.0" styleClass="card-white">
+               <children>
+                  <ProgressBar fx:id="progressPersonal" layoutX="218.0" layoutY="11.0" prefHeight="18.0" prefWidth="129.0" progress="0.0" />
+                  <Label fx:id="lblComplete" alignment="CENTER" layoutX="218.0" layoutY="29.0" prefHeight="18.0" prefWidth="129.0" text="0% complete" textFill="#e85342">
+                     <font>
+                        <Font name="Roboto Black" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox layoutX="77.0" layoutY="427.0" prefHeight="38.0" prefWidth="248.0" spacing="6.0" />
+            <TextField fx:id="txtnom" alignment="CENTER" layoutX="70.0" layoutY="100.0" maxWidth="295.0" minWidth="193.0" prefHeight="25.0" prefWidth="180.0" promptText="Nom">
+               <font>
+                  <Font name="Roboto Medium" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtemail" alignment="CENTER" layoutX="70.0" layoutY="185.0" maxWidth="295.0" minWidth="193.0" prefHeight="25.0" prefWidth="180.0" promptText="Email">
+               <font>
+                  <Font name="Roboto Medium" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtpwd" accessibleRole="PASSWORD_FIELD" alignment="CENTER" layoutX="69.0" layoutY="229.0" maxWidth="295.0" minWidth="193.0" prefHeight="28.0" prefWidth="180.0" promptText="Mot de passe">
+               <font>
+                  <Font name="Roboto Medium" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtprenom" alignment="CENTER" layoutX="70.0" layoutY="140.0" maxWidth="295.0" minWidth="193.0" prefHeight="25.0" prefWidth="180.0" promptText="Prenom">
+               <font>
+                  <Font name="Roboto Medium" size="14.0" />
+               </font>
+            </TextField>
+            <ComboBox id="typeu" fx:id="comboUserType" layoutX="69.0" layoutY="273.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.9" prefHeight="25.0" prefWidth="193.0" promptText="                        Role" />
+            <ImageView fitHeight="49.0" fitWidth="240.0" layoutX="23.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMage/enregistre%20(2).png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtpseudo" alignment="CENTER" layoutX="69.0" layoutY="58.0" maxWidth="295.0" minWidth="193.0" prefHeight="25.0" prefWidth="180.0" promptText="nom utilisateur">
+               <font>
+                  <Font name="Roboto Medium" size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnSave" alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="319.0" mnemonicParsing="false" onAction="#saveUser" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: efc057;" text="Enregistrer" textAlignment="CENTER" textFill="#1b1a1a" textOverrun="CENTER_ELLIPSIS" />
+            <Button fx:id="btnSave1" alignment="CENTER" contentDisplay="CENTER" layoutX="209.0" layoutY="319.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: rgb(0, 170, 207);" text="Vider" textAlignment="CENTER" textFill="#eeebeb" textOverrun="CENTER_ELLIPSIS" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="350.0" prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #34C663;">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="240.0" layoutX="48.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMage/share.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="140.0" fitWidth="226.0" layoutX="62.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMage/Untitled-2.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="acc" alignment="CENTER" contentDisplay="CENTER" layoutX="234.0" layoutY="330.0" mnemonicParsing="false" onAction="#Acceuil" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #FFFFFF;" text="Acceuil" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
